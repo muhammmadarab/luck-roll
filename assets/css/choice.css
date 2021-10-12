@@ -1,0 +1,43 @@
+/* choice container */
+.choices {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 25em;
+  margin-top: 3em;
+}
+
+.choice__title {
+  width: 100%;
+  margin-bottom: 0.5em;
+  text-align: center;
+}
+
+.choice {
+  height: 3em;
+  width: 5em;
+  border: 0.15em solid #fff;
+  border-radius: 0.5em;
+  margin: 1em;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.choice > input[name="choice"] {
+  display: none;
+}
+
+.choice > label {
+  height: 100%;
+  width: 100%;
+}
+
+.choice > label > h2 {
+  line-height: 1.8em;
+  text-align: center;
+  cursor: pointer;
+}
+
+.choice > label > h2:hover {
+  background-color: #fff;
+  color: blueviolet;
+}

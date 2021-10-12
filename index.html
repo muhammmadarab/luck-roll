@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- required meta tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- title and favicon -->
+    <title>Luck Roll -The Game</title>
+    <link rel="shortcut icon" href="./assets/img/favicon.png" type="image/x-icon">
+
+    <!-- custom styling -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="game__title">Luck Roll - The Game</h1>
+        <div class="display">
+            <h4 class="display__score">Score: <span>0</span></h4>
+            <h4 class="display__choice">Your Choice: <span>0</span></h4>
+            <h4 class="display__outcome">Outcome: <span>4</span></h4>
+            <h4 class="display__time">Next roll in: <span>0</span>s</h4>
+        </div>
+        <div class="dice__container">
+            <div class="dice">
+                <div class="dice__side dice__side--four dice__side--initial">
+                    <span>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                    </span>
+                    <span>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="choices">
+            <h2 class="choice__title">Select your choice</h2>
+            <div class="choice choice--one">
+                <label for="one">
+                    <h2>1</h2>
+                </label>
+                <input type="radio" id="one" name="choice">
+            </div>
+            <div class="choice choice--two">
+                <label for="two">
+                    <h2>2</h2>
+                </label>
+                <input type="radio" id="two" name="choice">
+            </div>
+            <div class="choice choice--three">
+                <label for="three">
+                    <h2>3</h2>
+                </label>
+                <input type="radio" id="three" name="choice">
+            </div>
+            <div class="choice choice--four">
+                <label for="four">
+                    <h2>4</h2>
+                </label>
+                <input type="radio" id="four" name="choice">
+            </div>
+            <div class="choice choice--five">
+                <label for="five">
+                    <h2>5</h2>
+                </label>
+                <input type="radio" id="five" name="choice">
+            </div>
+            <div class="choice choice--six">
+                <label for="six">
+                    <h2>6</h2>
+                </label>
+                <input type="radio" id="six" name="choice">
+            </div>
+        </div>
+
+        <div class="messageContainer">
+            <p class="resultMessage">Your guess was right</p>
+        </div>
+    </div>
+
+    <!-- custom js -->
+    <script src="./assets/js/app.js"></script>
+</body>
+
+</html>
