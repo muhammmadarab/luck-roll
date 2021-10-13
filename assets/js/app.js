@@ -128,7 +128,9 @@ const roll = () => {
     `;
   }
 
-  getResult(num);
+  setTimeout(() => {
+    getResult(num);
+  }, 1500);
 };
 
 // diaply message
@@ -174,11 +176,11 @@ const initialize = () => {
   timer(10);
 
   setInterval(() => {
+    roll();
     setTimeout(() => {
-      roll();
       timer(10);
-    }, 3000);
-  }, 10000);
+    }, 1000);
+  }, 11000);
 };
 
 initialize();
