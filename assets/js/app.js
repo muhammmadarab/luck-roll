@@ -137,7 +137,7 @@ const roll = () => {
   }, 1500);
 };
 
-// diaply message
+// display message
 const message = (result) => {
   if (result) {
     messageDisplay.innerHTML = "Your guess was right";
