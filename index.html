@@ -16,6 +16,22 @@
 </head>
 
 <body>
+    <div class="modal__container">
+        <div class="modal">
+            <h2 class="modal__title">Welcome</h2>
+            <h3 class="modal__intro">Let me show you how to play:</h3>
+            <ol class="modal__description">
+                <li>You have to select a number from the given choices.</li>
+                <li>The dice will roll after every 10 seconds.</li>
+                <li>If your selected number matches with the number on dice, you will get 10 points.</li>
+                <li>And if not you can try again.</li>
+                <li>You can change your choice as many times you want before the dice rolls.</li>
+            </ol>
+            <button class="play__btn">
+                Play
+            </button>
+        </div>
+    </div>
     <div class="container">
         <h1 class="game__title">Luck Roll - The Game</h1>
         <div class="display">
@@ -37,6 +53,9 @@
                     </span>
                 </div>
             </div>
+        </div>
+        <div class="messageContainer">
+            <p class="resultMessage"></p>
         </div>
         <div class="choices">
             <h2 class="choice__title">Select your choice</h2>
@@ -76,10 +95,6 @@
                 </label>
                 <input type="radio" id="six" name="choice">
             </div>
-        </div>
-
-        <div class="messageContainer">
-            <p class="resultMessage">Your guess was right</p>
         </div>
     </div>
 

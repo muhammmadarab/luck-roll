@@ -1,6 +1,10 @@
 // declaring the variables
 let score = 0;
 
+// collecting modal elements
+const modal = document.querySelector(".modal__container");
+const playBtn = document.querySelector(".play__btn");
+
 // collecting display elements
 const scoreDisplay = document.querySelector(".display__score > span");
 const choiceDisplay = document.querySelector(".display__choice > span");
@@ -147,7 +151,7 @@ const message = (result) => {
       "resultMessage--true",
       "resultMessage--false"
     );
-  }, 4000);
+  }, 3000);
 };
 
 // results
@@ -183,4 +187,10 @@ const initialize = () => {
   }, 11000);
 };
 
-initialize();
+// play
+playBtn.addEventListener("click", () => {
+  setTimeout(() => {
+    modal.classList.add("d-none");
+    initialize();
+  }, 500);
+});
